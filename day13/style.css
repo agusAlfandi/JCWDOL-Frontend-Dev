@@ -1,0 +1,99 @@
+/* Modal Styles */
+.modal {
+  display: none; /* Modal tidak ditampilkan secara default */
+  position: fixed;
+  z-index: 1;
+  left: 25%;
+  top: 12%;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  height: 80%;
+  /* background-color: rgba(0, 0, 0, 0.4); */
+}
+
+.modal:target {
+  display: block; /* Tampilkan modal ketika ID modal menjadi target */
+}
+
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: 5% auto;
+  border: 1px solid #888;
+  border-radius: 8px;
+  width: 80%;
+  max-height: 90vh;
+  overflow: auto;
+  z-index: 2;
+}
+
+.close-btn {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  text-decoration-line: none;
+  padding-right: 8px;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  color: black;
+  text-decoration-line: none;
+  cursor: pointer;
+}
+
+/* Button Styles */
+.modal-btn {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  text-decoration-line: none;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 130px;
+  border: solid 1px white;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.img-container {
+  width: 100%;
+  height: 200px;
+  background-image: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.content {
+  text-align: center;
+  padding: 5px;
+}
+
+.body-love {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.love {
+  padding: 5px;
+  background-color: pink;
+  border-radius: 5px;
+}
