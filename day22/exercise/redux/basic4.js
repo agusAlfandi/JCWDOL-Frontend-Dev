@@ -12,7 +12,7 @@ const initialState = {
   error: "",
 };
 
-function fetchUsersRequest(state = initialState, action) {
+function fetchUsersRequest() {
   return {
     type: FETCH_USERS_REQUEST,
   };
