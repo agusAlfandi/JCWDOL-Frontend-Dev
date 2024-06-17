@@ -37,7 +37,7 @@ function fetchUser() {
     dispatch(fetchUsersRequest());
     try {
       const { data } = await axios.get(
-        "https://jsonplaceholder.typicode.com/users"
+        "https://jsonplaceholder.typicode.com/userss"
       );
       dispatch(fetchUsersSuccess(data));
     } catch (error) {

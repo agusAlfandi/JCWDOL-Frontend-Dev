@@ -1,21 +1,24 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const initialState = createSlice({
+const initialState = {
   numOfindomie: 20,
-});
+};
 
-const indomieSlice = createSlice({
+export const indomieSlice = createSlice({
   name: "indomie",
   initialState,
   reducers: {
+    addIndomie: (state) => {
+      state.numOfindomie += 1;
+    },
     buyIndomie: (state) => {
-      state.numOfIndomie -= 1;
+      state.numOfindomie -= 1;
     },
     restockIndomie: (state, action) => {
-      state.numOfIndomie = state.numOfIndomie + action.payload;
+      state.numOfindomie += action.payload;
     },
   },
 });
 
-export const { buyIndomie, restockIndomie } = indomieSlice.actions;
+export const { addIndomie, buyIndomie, restockIndomie } = indomieSlice.actions;
 export default indomieSlice.reducer;
