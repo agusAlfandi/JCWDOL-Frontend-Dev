@@ -3,8 +3,8 @@ import { createClient } from "contentful";
 async function getStaticPaths(slug) {
   try {
     const client = createClient({
-      space: "sf42d6317dpy",
-      accessToken: "WUSY41AQEVYGVnKzOKg3XicR0AUGCfyFPQhh_K78y9E",
+      space: process.env.NEXT_PUBLIC_CONTENTFUL_SPACE_ID,
+      accessToken: process.env.NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN,
     });
     const res = await client.getEntries({
       content_type: "profileCompany",

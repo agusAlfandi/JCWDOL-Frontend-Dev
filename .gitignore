@@ -7,11 +7,12 @@ day21/my-project/node_m*
 day21/project-formik/node_m*
 day22/exercise/redux/node_m*
 day22/exercise/redux-toolkit/node_m*
-day23/hello-next/node_m*
-day23/hello-next/node_m*
+day23/hello/node_m*
+day23/hello-next1/node_m*
 day23/redux-toolkit/node_m*
 day24/fetch-nextjs/node_m*
 day25/cms/node_m*
+day25/cms/.env*
 day26/nextjs-contentful/node_m*
 day27/basic-component-testing/node_m*
 day27/basic-unit-testing/node_m*
